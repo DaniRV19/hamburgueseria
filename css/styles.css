@@ -1,0 +1,165 @@
+/* ===== Reset y cuerpo ===== */
+body {
+    margin:0;
+    font-family:'Poppins', sans-serif;
+    background-color:#000;
+    color:#fff;
+}
+
+/* ===== Navbar ===== */
+.navbar {
+    background-color:#1a1a1a !important;
+}
+.navbar .navbar-brand {
+    color:#D21F3C !important;
+    font-weight:700;
+    font-size:1.8rem;
+    text-shadow:
+        0 0 5px #D21F3C,
+        0 0 10px #D21F3C,
+        0 0 20px #D21F3C;
+}
+.navbar .nav-link {
+    color:#fff !important;
+    font-weight:500;
+    text-shadow: 0 0 3px #fff;
+}
+.navbar .nav-link:hover {
+    color:#F2BD1E !important;
+    text-shadow:
+        0 0 5px #F2BD1E,
+        0 0 10px #F2BD1E;
+}
+
+/* ===== Hero ===== */
+.hero {
+    background:url('../assets/hero-burger.jpg') center/cover no-repeat;
+    height:60vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+}
+.hero h1 {
+    font-size:3rem;
+    color:#F2BD1E;
+    text-shadow:
+        0 0 10px #F2BD1E,
+        0 0 20px #F2BD1E,
+        0 0 30px #F2BD1E;
+}
+.hero p {
+    font-size:1.2rem;
+    text-shadow:
+        0 0 5px #fff,
+        0 0 10px #fff;
+}
+
+/* ===== Secciones ===== */
+.section-title {
+    text-align:center;
+    font-size:2.5rem;
+    margin-bottom:1.5rem;
+    color:#D21F3C;
+    text-shadow:
+        0 0 5px #D21F3C,
+        0 0 10px #D21F3C,
+        0 0 20px #D21F3C;
+}
+
+/* ===== Cards ===== */
+.card {
+    border:none;
+    border-radius:12px;
+    background-color:#1f1f1f;
+    box-shadow:0 4px 8px rgba(0,0,0,0.6);
+    transition:0.3s;
+}
+.card:hover {
+    transform:translateY(-8px) scale(1.03);
+    box-shadow:0 6px 12px rgba(0,0,0,0.8);
+}
+.card-img-top {
+    border-top-left-radius:12px;
+    border-top-right-radius:12px;
+    object-fit:cover;
+    height:220px;
+}
+
+/* ===== Texto de productos en neón ===== */
+.card-title {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #00fff7; /* Neón cyan */
+    text-shadow:
+        0 0 5px #00fff7,
+        0 0 10px #00fff7,
+        0 0 20px #00fff7,
+        0 0 40px #00fff7;
+}
+
+.card-text, 
+.card-body p {
+    color: #ff00ff; /* Neón magenta */
+    text-shadow:
+        0 0 5px #ff00ff,
+        0 0 10px #ff00ff,
+        0 0 20px #ff00ff;
+}
+
+/* ===== Botones ===== */
+.btn-brand {
+    background-color: #D21F3C;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 50px;
+    box-shadow: 0 0 10px #D21F3C, 0 0 20px #D21F3C, 0 0 40px #D21F3C;
+    transition: 0.3s;
+}
+.btn-brand:hover {
+    background-color: #F2BD1E;
+    color: #000;
+    box-shadow: 0 0 10px #F2BD1E, 0 0 20px #F2BD1E, 0 0 40px #F2BD1E;
+}
+
+/* ===== Modal ===== */
+.modal-content {
+    background-color:#1a1a1a;
+    color:#fff;
+    border-radius:12px;
+}
+.btn-close-white {
+    filter: invert(1);
+}
+
+/* ===== Ingredientes ===== */
+#ingredientsContainer .form-check-label {
+    color: #39ff14; /* Neón verde */
+    text-shadow:
+        0 0 5px #39ff14,
+        0 0 10px #39ff14,
+        0 0 20px #39ff14;
+}
+#ingredientsContainer .form-check-input {
+    accent-color:#D21F3C;
+}
+
+/* ===== Footer ===== */
+footer {
+    background-color:#111;
+    color:#aaa;
+    text-align:center;
+    padding:15px 0;
+    border-top:2px solid #D21F3C;
+}
+
+/* ===== Total carrito ===== */
+#totalPrice {
+    font-size:1.6rem;
+    font-weight:700;
+    color:#00fff7;
+    text-shadow:
+        0 0 5px #00fff7,
+        0 0 10px #00fff7,
+        0 0 20px #00fff7;
+}
