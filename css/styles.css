@@ -1,165 +1,184 @@
-/* ===== Reset y cuerpo ===== */
 body {
-    margin:0;
-    font-family:'Poppins', sans-serif;
-    background-color:#000;
-    color:#fff;
+  background: #0b0b0b;
+  color: #eaeaea;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
 }
 
-/* ===== Navbar ===== */
+/* Navbar */
 .navbar {
-    background-color:#1a1a1a !important;
-}
-.navbar .navbar-brand {
-    color:#D21F3C !important;
-    font-weight:700;
-    font-size:1.8rem;
-    text-shadow:
-        0 0 5px #D21F3C,
-        0 0 10px #D21F3C,
-        0 0 20px #D21F3C;
-}
-.navbar .nav-link {
-    color:#fff !important;
-    font-weight:500;
-    text-shadow: 0 0 3px #fff;
-}
-.navbar .nav-link:hover {
-    color:#F2BD1E !important;
-    text-shadow:
-        0 0 5px #F2BD1E,
-        0 0 10px #F2BD1E;
+  background: rgba(0,0,0,0.85);
+  padding: 1rem 0;
 }
 
-/* ===== Hero ===== */
+.navbar-brand {
+  color: #ff2e63;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+/* Hero */
 .hero {
-    background:url('../assets/hero-burger.jpg') center/cover no-repeat;
-    height:60vh;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    text-align:center;
-}
-.hero h1 {
-    font-size:3rem;
-    color:#F2BD1E;
-    text-shadow:
-        0 0 10px #F2BD1E,
-        0 0 20px #F2BD1E,
-        0 0 30px #F2BD1E;
-}
-.hero p {
-    font-size:1.2rem;
-    text-shadow:
-        0 0 5px #fff,
-        0 0 10px #fff;
+  height: 90vh;
+  background: linear-gradient(
+    rgba(0,0,0,0.6),
+    rgba(0,0,0,0.8)
+  ),
+  url('../assets/hero.jpg') center/cover;
+  display: flex;
+  align-items: center;
 }
 
-/* ===== Secciones ===== */
-.section-title {
-    text-align:center;
-    font-size:2.5rem;
-    margin-bottom:1.5rem;
-    color:#D21F3C;
-    text-shadow:
-        0 0 5px #D21F3C,
-        0 0 10px #D21F3C,
-        0 0 20px #D21F3C;
+.hero-inner h1 {
+  font-size: 3.5rem;
+  color: #f9c74f;
 }
 
-/* ===== Cards ===== */
-.card {
-    border:none;
-    border-radius:12px;
-    background-color:#1f1f1f;
-    box-shadow:0 4px 8px rgba(0,0,0,0.6);
-    transition:0.3s;
-}
-.card:hover {
-    transform:translateY(-8px) scale(1.03);
-    box-shadow:0 6px 12px rgba(0,0,0,0.8);
-}
-.card-img-top {
-    border-top-left-radius:12px;
-    border-top-right-radius:12px;
-    object-fit:cover;
-    height:220px;
+.hero-inner p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
 }
 
-/* ===== Texto de productos en neón ===== */
-.card-title {
-    font-size: 1.4rem;
-    font-weight: 700;
-    color: #00fff7; /* Neón cyan */
-    text-shadow:
-        0 0 5px #00fff7,
-        0 0 10px #00fff7,
-        0 0 20px #00fff7,
-        0 0 40px #00fff7;
-}
-
-.card-text, 
-.card-body p {
-    color: #ff00ff; /* Neón magenta */
-    text-shadow:
-        0 0 5px #ff00ff,
-        0 0 10px #ff00ff,
-        0 0 20px #ff00ff;
-}
-
-/* ===== Botones ===== */
+/* Buttons */
 .btn-brand {
-    background-color: #D21F3C;
-    color: #fff;
-    font-weight: 600;
-    border-radius: 50px;
-    box-shadow: 0 0 10px #D21F3C, 0 0 20px #D21F3C, 0 0 40px #D21F3C;
-    transition: 0.3s;
+  background: #ff2e63;
+  border-radius: 50px;
+  padding: 12px 32px;
+  font-weight: 600;
+  color: #fff;
+  transition: 0.3s;
 }
+
 .btn-brand:hover {
-    background-color: #F2BD1E;
-    color: #000;
-    box-shadow: 0 0 10px #F2BD1E, 0 0 20px #F2BD1E, 0 0 40px #F2BD1E;
+  background: #f9c74f;
+  color: #000;
 }
 
-/* ===== Modal ===== */
-.modal-content {
-    background-color:#1a1a1a;
-    color:#fff;
-    border-radius:12px;
-}
-.btn-close-white {
-    filter: invert(1);
+/* Sections */
+.section-title {
+  text-align: center;
+  margin: 4rem 0 2rem;
+  color: #ff2e63;
+  font-size: 2.5rem;
 }
 
-/* ===== Ingredientes ===== */
-#ingredientsContainer .form-check-label {
-    color: #39ff14; /* Neón verde */
-    text-shadow:
-        0 0 5px #39ff14,
-        0 0 10px #39ff14,
-        0 0 20px #39ff14;
-}
-#ingredientsContainer .form-check-input {
-    accent-color:#D21F3C;
+/* Features */
+.features h3 {
+  color: #f9c74f;
 }
 
-/* ===== Footer ===== */
+/* Burger cards */
+.burger-card {
+  background: #181818;
+  border-radius: 18px;
+  overflow: hidden;
+  transition: 0.3s;
+}
+
+.burger-card:hover {
+  transform: translateY(-8px);
+}
+
+.burger-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.burger-info {
+  padding: 1.2rem;
+}
+
+.burger-info h5 {
+  color: #f9c74f;
+  font-weight: 700;
+}
+
+.burger-info span {
+  display: block;
+  margin-bottom: 1rem;
+  color: #ccc;
+}
+
+/* Cart */
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  background: #181818;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+}
+
+.cart-total {
+  font-size: 1.6rem;
+  color: #f9c74f;
+  margin-top: 2rem;
+  text-align: right;
+}
+
+/* Footer */
 footer {
-    background-color:#111;
-    color:#aaa;
-    text-align:center;
-    padding:15px 0;
-    border-top:2px solid #D21F3C;
+  margin-top: 4rem;
+  padding: 1.5rem;
+  text-align: center;
+  color: #777;
+  background: #111;
 }
 
-/* ===== Total carrito ===== */
-#totalPrice {
-    font-size:1.6rem;
-    font-weight:700;
-    color:#00fff7;
-    text-shadow:
-        0 0 5px #00fff7,
-        0 0 10px #00fff7,
-        0 0 20px #00fff7;
+/* Badge animado */
+#cartBadge {
+  background: #ff2e63;
+  color: #fff;
+  border-radius: 50%;
+  padding: 2px 8px;
+  font-size: 0.8rem;
+  margin-left: 4px;
+  transition: transform 0.2s ease;
+}
+
+#cartBadge.bump {
+  transform: scale(1.4);
+}
+
+/* Toast */
+.toast-msg {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background: #181818;
+  color: #fff;
+  padding: 14px 20px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+  opacity: 0;
+  transform: translateY(20px);
+  transition: 0.3s;
+  z-index: 9999;
+}
+
+.toast-msg.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Pedido final */
+.order-success {
+  text-align: center;
+  padding: 4rem 1rem;
+}
+
+.order-success h2 {
+  color: #f9c74f;
+}
+
+#ingredientsList label {
+  display: block;
+  margin-bottom: 8px;
+  cursor: pointer;
+  color: #eaeaea;
+}
+
+#ingredientsList input {
+  margin-right: 8px;
 }
